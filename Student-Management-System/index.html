@@ -1,0 +1,934 @@
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-shape shape-one"></div>
+    <div class="bg-shape shape-two"></div>
+    <div class="bg-shape shape-three"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>✦</span> StudentHub
+        </div>
+
+        <div class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Students</a>
+            <a href="#">About</a>
+        </div>
+
+        <button class="profile-btn">
+            Admin
+        </button>
+    </nav>
+
+
+    <!-- Main -->
+    <main class="main-container">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <span class="badge">✨ Student Management System</span>
+
+                <h1>
+                    Manage Your
+                    <span>Students</span>
+                    Easily
+                </h1>
+
+                <p>
+                    Add, manage and organize student information
+                    through a simple and modern dashboard.
+                </p>
+            </div>
+
+            <div class="hero-icon">
+                🎓
+            </div>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon purple">👨‍🎓</div>
+                <div>
+                    <p>Total Students</p>
+                    <h2>24</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">📚</div>
+                <div>
+                    <p>Courses</p>
+                    <h2>08</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div>
+                    <p>Active</p>
+                    <h2>21</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Add Student -->
+        <section class="add-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="small-title">STUDENT MANAGEMENT</span>
+                    <h2>Add New Student</h2>
+                </div>
+
+                <span class="plus-icon">＋</span>
+            </div>
+
+            <form class="student-form">
+
+                <div class="input-group">
+                    <label>Student Name</label>
+                    <input
+                        type="text"
+                        placeholder="Enter student name"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input
+                        type="email"
+                        placeholder="student@example.com"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Age</label>
+                    <input
+                        type="number"
+                        placeholder="Age"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Course</label>
+                    <select>
+                        <option>Select course</option>
+                        <option>Web Development</option>
+                        <option>Mobile App Development</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Graphic Design</option>
+                    </select>
+                </div>
+
+                <button class="add-btn" type="submit">
+                    <span>＋</span>
+                    Add Student
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Students -->
+        <section class="students-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="small-title">STUDENT LIST</span>
+                    <h2>Recent Students</h2>
+                </div>
+
+                <button class="view-btn">
+                    View All →
+                </button>
+            </div>
+
+
+            <div class="students-grid">
+
+                <!-- Student 1 -->
+                <div class="student-card">
+
+                    <div class="student-top">
+                        <div class="avatar avatar-one">
+                            AK
+                        </div>
+
+                        <span class="status">Active</span>
+                    </div>
+
+                    <h3>Ahmed Khan</h3>
+
+                    <p class="student-email">
+                        ahmed@example.com
+                    </p>
+
+                    <div class="student-info">
+                        <span>🎓 Web Development</span>
+                        <span>Age: 21</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- Student 2 -->
+                <div class="student-card">
+
+                    <div class="student-top">
+                        <div class="avatar avatar-two">
+                            SK
+                        </div>
+
+                        <span class="status">Active</span>
+                    </div>
+
+                    <h3>Sarah Khan</h3>
+
+                    <p class="student-email">
+                        sarah@example.com
+                    </p>
+
+                    <div class="student-info">
+                        <span>🎨 UI/UX Design</span>
+                        <span>Age: 20</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- Student 3 -->
+                <div class="student-card">
+
+                    <div class="student-top">
+                        <div class="avatar avatar-three">
+                            HM
+                        </div>
+
+                        <span class="status">Active</span>
+                    </div>
+
+                    <h3>Hassan Malik</h3>
+
+                    <p class="student-email">
+                        hassan@example.com
+                    </p>
+
+                    <div class="student-info">
+                        <span>🤖 Artificial Intelligence</span>
+                        <span>Age: 22</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 StudentHub. All rights reserved.
+        </p>
+
+        <span>
+            Made with ❤️
+        </span>
+    </footer>
+
+</body>
+</html>
+```
+
+### `style.css`
+
+```css
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f7f8fc;
+    color: #172033;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   ANIMATED BACKGROUND
+========================= */
+
+.bg-shape {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.25;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.shape-one {
+    width: 350px;
+    height: 350px;
+    background: #8b5cf6;
+    top: -120px;
+    left: -100px;
+    animation: floatOne 9s ease-in-out infinite;
+}
+
+.shape-two {
+    width: 300px;
+    height: 300px;
+    background: #38bdf8;
+    right: -100px;
+    top: 30%;
+    animation: floatTwo 11s ease-in-out infinite;
+}
+
+.shape-three {
+    width: 280px;
+    height: 280px;
+    background: #ec4899;
+    bottom: -100px;
+    left: 40%;
+    animation: floatThree 10s ease-in-out infinite;
+}
+
+@keyframes floatOne {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(70px, 50px);
+    }
+}
+
+@keyframes floatTwo {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-60px, 70px);
+    }
+}
+
+@keyframes floatThree {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(50px, -60px);
+    }
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 16px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(30, 41, 59, 0.08);
+
+    animation: slideDown 0.7s ease;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.logo span {
+    color: #7c3aed;
+    margin-right: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #64748b;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #6d28d9;
+    background: #f1eafe;
+}
+
+.profile-btn {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 9px 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.profile-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px 60px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 260px;
+    padding: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6d28d9,
+            #8b5cf6,
+            #6366f1
+        );
+
+    border-radius: 28px;
+    color: white;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 25px 50px rgba(109, 40, 217, 0.25);
+
+    animation: fadeUp 0.8s ease;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    right: -100px;
+    top: -150px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    right: 100px;
+    bottom: -180px;
+}
+
+.hero-text {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 13px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #ddd6fe;
+}
+
+.hero p {
+    margin-top: 18px;
+    color: #ede9fe;
+    max-width: 560px;
+    line-height: 1.7;
+}
+
+.hero-icon {
+    font-size: 100px;
+    animation: floating 3s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(4deg);
+    }
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid #edf0f5;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+
+    transition: 0.3s;
+    animation: fadeUp 0.9s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+.stat-card p {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.stat-card h2 {
+    font-size: 26px;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+    font-size: 20px;
+}
+
+.purple {
+    background: #f3e8ff;
+}
+
+.blue {
+    background: #e0f2fe;
+}
+
+.green {
+    background: #dcfce7;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.add-section,
+.students-section {
+    background: rgba(255,255,255,0.9);
+    padding: 28px;
+    border-radius: 22px;
+    border: 1px solid #edf0f5;
+    box-shadow: 0 8px 30px rgba(15,23,42,0.05);
+    margin-top: 22px;
+    animation: fadeUp 1s ease;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.small-title {
+    color: #8b5cf6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-top: 5px;
+    font-size: 23px;
+}
+
+.plus-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3e8ff;
+    color: #7c3aed;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.student-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 13px 15px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 11px;
+
+    outline: none;
+    background: #f8fafc;
+
+    font-family: inherit;
+    color: #1e293b;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    background: white;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 4px rgba(139,92,246,0.1);
+}
+
+.add-btn {
+    grid-column: 1 / -1;
+
+    border: none;
+    padding: 14px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #8b5cf6
+    );
+
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(124,58,237,0.25);
+
+    transition: 0.3s;
+}
+
+.add-btn span {
+    margin-right: 5px;
+}
+
+.add-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(124,58,237,0.35);
+}
+
+
+/* =========================
+   STUDENT GRID
+========================= */
+
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.student-card {
+    padding: 20px;
+    background: white;
+
+    border: 1px solid #e8edf3;
+    border-radius: 18px;
+
+    box-shadow: 0 7px 22px rgba(15,23,42,0.05);
+
+    transition: 0.35s;
+
+    animation: cardAppear 0.8s ease both;
+}
+
+.student-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.student-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.student-card:hover {
+    transform: translateY(-7px);
+    border-color: #c4b5fd;
+    box-shadow: 0 18px 35px rgba(15,23,42,0.1);
+}
+
+.student-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    font-weight: 800;
+    color: white;
+}
+
+.avatar-one {
+    background: linear-gradient(135deg,#6366f1,#8b5cf6);
+}
+
+.avatar-two {
+    background: linear-gradient(135deg,#ec4899,#f43f5e);
+}
+
+.avatar-three {
+    background: linear-gradient(135deg,#06b6d4,#2563eb);
+}
+
+.status {
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+
+    color: #15803d;
+    background: #dcfce7;
+}
+
+.student-card h3 {
+    margin-top: 17px;
+    font-size: 17px;
+}
+
+.student-email {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    margin-top: 18px;
+    padding: 12px;
+
+    background: #f8fafc;
+    border-radius: 11px;
+
+    font-size: 11px;
+    color: #64748b;
+}
+
+.card-footer {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+    flex: 1;
+    padding: 9px;
+
+    border-radius: 9px;
+    border: none;
+
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.edit-btn {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.delete-btn {
+    background: #fff1f2;
+    color: #e11d48;
+}
+
+.edit-btn:hover {
+    background: #e2e8f0;
+}
+
+.delete-btn:hover {
+    background: #ffe4e6;
+}
+
+
+/* =========================
+   VIEW BUTTON
+======
+```
